@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Shell{
 
-   //--- シェルソート（要素の移動回数を返却）---//
+   
    static int shellSort(int[] a, int n) {
-      int count = 0;                     // 移動回数
+      int count = 0;                    
       int h;
       for (h = 1; h < n / 9; h = h * 3 + 1)
          ;
@@ -36,7 +36,7 @@ class Shell{
          x[i] = stdIn.nextInt();
       }
 
-      int count = shellSort(x, nx);            // 配列xをシェルソート
+      int count = shellSort(x, nx);            
 
       System.out.println("昇順にソートしました。");
       for (int i = 0; i < nx; i++)
